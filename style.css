@@ -1,0 +1,11 @@
+/* GENERAL */
+
+
+* { /* This is for universal padding across the page*/
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
