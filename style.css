@@ -1,11 +1,79 @@
 /* GENERAL */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 
 * { /* This is for universal padding across the page*/
-    margin: 10px;
-    padding: 10px;
+    margin: 4px;
+    padding: 4px;
 }
 
-body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+html {
+   scroll-behavior: smooth; 
 }
+
+p {
+    color: rgb(85,85,85);
+}
+/* TRANSITION*/
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP NAVIGATION*/
+
+nav, .nav-links { /*Makes both nav and navlinks classes use flex*/
+    display:flex;
+}
+
+nav { /*Targeting the navigation HTML element(body,head,nav etc.) directly*/
+    justify-content:space-around;
+    align-items:center;
+    height:1vh;
+}
+
+.nav-links{
+    gap:15px;
+    list-style:none;
+    font-size:30px;
+}
+
+a { /*Styling the link element*/
+    color:black;
+    text-decoration:none;
+    text-decoration-color:white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration:overline;
+    text-decoration-color: red; /* Change this color later*/
+}
+
+.logo {
+    font-size: 50px;
+}
+.logo:hover {
+    cursor: default; /*To stop cursor changing over the title name*/
+}
+
+
+
+/*FONTS*/
+.open-sans-light {
+    font-family: "Open Sans", system-ui; /* system-ui is the backup in case first font family doesn't work*/
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;/* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 800 */
+}
+
+.montserrat-font {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
