@@ -1,0 +1,8 @@
+@media screen and (max-width:1200px) { /* When screen resolution display is less than 1200 wide, it will show hamburger menu instead*/
+    #desktop-nav {
+        display:none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
