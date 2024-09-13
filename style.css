@@ -1,27 +1,14 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-/*FONTS*/
-.open-sans-light {
-    font-family: "Open Sans", system-ui; /* system-ui is the backup in case first font family doesn't work*/
-    font-optical-sizing: auto;
-    font-weight: 350;
-    font-style: normal;
-    font-variation-settings:
-    "wdth" 100;/* <uniquifier>: Use a unique and descriptive class name
-    <weight>: Use a value from 300 to 800 */
-}
-
-.montserrat-font {
-  font-family: "Montserrat", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * { /* This is for universal padding across the page*/
-    margin: 4px;
-    padding: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -29,7 +16,7 @@ html {
 }
 
 p {
-    color: rgb(26, 160, 201);
+    color: rgb(85, 85, 85);
 }
 
 
@@ -173,7 +160,7 @@ section { /* Styling for the section element in HTML*/
 
 #profile {
     display: flex;
-    justify-content;
+    justify-content: center;
     gap: 5rem;
     height: 80vh;
 }
@@ -184,13 +171,6 @@ section { /* Styling for the section element in HTML*/
     width: 400px;
     margin: auto 0; /*Auto at top, 0 on sides*/
 }
-
-.faded-image {
-    width: auto;  /* Set desired width */
-    height: auto; /* Maintain aspect ratio */
-    mask-image: radial-gradient(circle, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 55%);
-}
-
 
 .section__text {
     align-self: center;
@@ -271,3 +251,97 @@ section { /* Styling for the section element in HTML*/
 .btn-continer {
     gap: 1rem;
 }
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+    filter: grayscale(70%); /*Black&White*/
+}
+
+.arrow {
+    position: absolute; /* Fixed on page, absolutely does not change!*/
+    right: -5rem;
+    bottom: 2.5rem; /* -5 from the right corner and 2.5 rem up from the corner*/
+}
+
+.details-container { /* --------CONTAINERS FOR RE USE -----------*/
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}  /*---------------------------------------*/
+
+.section-container { /* Every container inside section div will get this applied to it*/
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* BACKGROUND SECTION */
+
+#background {
+    position: relative; /* This also makes the arrow pop up on the page*/
+}
+
+.background-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.background-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap; /* When resolution is too small, the content will wrap itself underneath*/
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around; /* EXPERIMENT*/
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.article-icon {
+    cursor: default;
+}
+
+/* PROJECTS SECTION */
