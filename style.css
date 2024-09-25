@@ -278,10 +278,17 @@ section { /* Styling for the section element in HTML*/
     filter: grayscale(70%); /*Black&White*/
 }
 
-.arrow {
+.arrow_down {
     position: absolute; /* Fixed on page, absolutely does not change!*/
     right: -5rem;
     bottom: 2.5rem; /* -5 from the right corner and 2.5 rem up from the corner*/
+}
+
+.arrow_top { /* Fixed on page, arrow for going up*/
+    position: absolute;
+    right: -5rem;
+    top: 2.5rem;
+    transform: rotate(180deg);
 }
 
 .details-container { /* --------CONTAINERS FOR RE USE -----------*/
@@ -340,7 +347,7 @@ article {
     gap: 0.5rem;
 }
 
-.article-icon {
+article .icon {
     cursor: default;
 }
 
