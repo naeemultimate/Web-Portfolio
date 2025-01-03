@@ -1,10 +1,10 @@
-<!DOCTYPE html> <!-- **MY WEBSITE PORTFOLIO CURRENTLY DEPLOYED**-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naeem Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> <!-- Added favicon of N-->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -15,40 +15,23 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#background">Background</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#youtube">YouTube</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-<!-- HAMBURGER HTML SECTION-->
-    <nav id="hamburger-nav">
-        <div class="logo">Naeem Shah</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#background" onclick="toggleMenu()">Background</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-<!--Profile section-->
+
     <section id="profile">
         <div class="section__pic-container">
-            <img class="faded-image" src="./assets/Professional_Circular.png" alt="My profile picture">
+            <img class="faded-image" src="./assets/Professional.jpg" alt="My profile picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hi I'm,</p>
             <h1 class="title"> Naeem </h1>
-            <p class="section__text__p2">a Software Developer.</p>
+            <p class="section__text__p2">a Tech Trainee @ La Fosse</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/')">Download Factsheet</button><!--FIX!!-->
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button><!--Redirect-->
+                <button class="btn btn-color-2" onclick="window.open('./assets/')">Download Factsheet</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/syed-naeem-shah'">
@@ -56,7 +39,7 @@
             </div>
         </div>
     </section>
-<!--About section-->
+
     <section id="about">
         <img src="./assets/arrow.png" alt="Pointing up arrow" class="icon arrow_top" onclick="location.href='./#'">
         <p class="section__text__p1">Get to know more</p>
@@ -85,16 +68,16 @@
         </div>
         <img src="./assets/arrow.png" alt="Pointing down arrow" class="icon arrow_down" onclick="location.href='./#background'">
     </section>
-<!--Background section-->    
+
     <section id="background">
         <img src="./assets/arrow.png" alt="Pointing up arrow" class="icon arrow_top" onclick="location.href='./#about'">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Background</h1>
         <div class="background-details-container">
             <div class="about-containers">
-                <div class="details-container"><!--SOFTWARE DEVELOPMENT CONTAINER-->
+                <div class="details-container">
                     <h2 class="background-sub-title">Software Development</h2>
-                    <div class="article-container"> <!--The skills articles with checkmark image icons-->
+                    <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
                             <div>
@@ -123,13 +106,6 @@
                                 <p>Basic</p>
                             </div>
                         </article>
-                        <!-- <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article> -->
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
                             <div>
@@ -139,9 +115,9 @@
                         </article>
                     </div>
                 </div>
-                <div class="details-container"><!--IT SKILLS CONTAINER using repeated CSS class function-->
+                <div class="details-container">
                     <h2 class="background-sub-title">IT Skills</h2>
-                    <div class="article-container"> <!--The 2nd skills articles with checkmark image icons-->
+                    <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
                             <div>
@@ -174,80 +150,51 @@
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Pointing down arrow" class="icon arrow_down" onclick="location.href='./#projects'">
+        <img src="./assets/arrow.png" alt="Pointing down arrow" class="icon arrow_down" onclick="location.href='./#youtube'">
     </section>
-<!--Projects section-->
-    <section id="projects">
+
+    <section id="youtube">
         <img src="./assets/arrow.png" alt="Pointing up arrow" class="icon arrow_top" onclick="location.href='./#background'">
-        <p class="section__text__p1">Browse my ideas</p>
-        <h1 class="title">Upcoming Projects</h1>
-        <div class="background-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/example-project-1.png" alt="example image" class="project-img">
-                </div>
-                <h2 class="project-sub-title project-title">My Bootstrap Project</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> <!--Link to live demo-->
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/example-project-2.png" alt="Project 2" class="project-img">
-                </div>
-                <h2 class="project-sub-title project-title">My React.js project</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> <!--Link to live demo-->
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/example-project-3.png" alt="Project 3" class="project-img">
-                </div>
-                <h2 class="project-sub-title project-title">Full Stack Project</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button> <!--Link to live demo-->
-                </div>
-            </div>
-        </div> <!--"about-containers" div wrap around for flex-->
+        <h2>My YouTube Goals</h2>
+        <p>One of my goals for 2025 is to build a YouTube channel and community.<br>So subscribe and let's see!</br> </p>
+        <div class="section__pic-container">
+            <img src="./assets/yt-image.jpg" alt="YouTube placeholder image" class="youtube-large-image">
+        </div>
+        <div class="btn-container">
+            <a href="https://youtube.com/@naeemultimate" target="_blank" class="btn btn-color-1">Visit My Channel</a>
         </div>
         <img src="./assets/arrow.png" alt="Pointing down arrow" class="icon arrow_down" onclick="location.href='./#contact'">
     </section>
-<!--Contact section-->
-<section id="contact">
-    <img src="./assets/arrow.png" alt="Pointing up arrow" class="icon arrow_top" onclick="location.href='./#projects'">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-            <p><a href="mailto:naeemultimate@gmail.com">naeemultimate@gmail.com</a></p>
+
+    <section id="contact">
+        <img src="./assets/arrow.png" alt="Pointing up arrow" class="icon arrow_top" onclick="location.href='./#youtube'">
+        <p class="section__text__p1">Ways to</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:naeemultimate@gmail.com">naeemultimate@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/syed-naeem-shah">LinkedIn</a></p>
+            </div>
         </div>
-        <div class="contact-info-container">
-            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-            <p><a href="https://www.linkedin.com/in/syed-naeem-shah">LinkedIn</a></p>
-        </div>
-    </div>
-</div>
-</section>
-<footer>
-    <nav>
-        <div class="nav-links-container">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#background">Background</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
-                <li><a href="#">Back to top</a></li>
-            </ul>
-        </div>
-    </nav>
-    <p>Copyright &#169; <span id="year"></span> Naeem. All Rights Reserved.</p> <!--Updating year automatically now by fetching it from script.js-->
-</footer>
-<script src="script.js"></script>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#youtube">YouTube</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Back to top</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; <span id="year"></span> Naeem. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
