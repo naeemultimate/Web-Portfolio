@@ -1,27 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naeem Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Naeem Shah | Data & Project Professional</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body class="open-sans-light" style="text-align: center; padding: 100px 20px; font-family: 'Open Sans', sans-serif; background-color: #f4f4f4; color: #333;">
-    <div style="max-width: 600px; margin: auto;">
-        <h1 style="font-size: 2.5em; margin-bottom: 20px;">Website Under Maintenance</h1>
-        <p style="font-size: 1.2em; line-height: 1.6;">
-            Thank you for visiting.<br>
-            My portfolio is currently undergoing scheduled updates to improve your experience.
-            <br><br>
-            The website will be live again <strong>soon</strong>.
-            <br><br>
-            In the meantime, feel free to connect with me via
-            <a href="mailto:naeemultimate@gmail.com" style="color: #0073e6; text-decoration: none;">email</a> or 
-            <a href="https://linkedin.com/in/syed-naeem-shah" style="color: #0073e6; text-decoration: none;">LinkedIn</a>.
-        </p>
-    </div>
-</body>
 
+<body class="open-sans-light">
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="desktop-nav">
+    <div class="logo montserrat-font">Naeem Shah</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PROFILE SECTION ===== -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="faded-image" src="./assets/Professional.jpg" alt="My profile picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hi, I’m</p>
+      <h1 class="title">Naeem</h1>
+      <p class="section__text__p2">Data & Project Delivery Professional</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Naeem_CV.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/syed-naeem-shah'">
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/naeemultimate'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+<img src="./assets/arrow_up.png" alt="Arrow up" class="icon arrow_top" onclick="location.href='./#'">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About Me</h1>
+
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/About-me-picture.png" alt="About Me Picture" class="about-pic">
+      </div>
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon">
+            <h3>Experience</h3>
+            <p>Background across data, delivery, and business operations</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>BSc Computer Science (QMUL)<br>MSc Computer Science with Cyber Security (Oxford Brookes)</p>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <p>
+            I’m an analytical and delivery-focused professional with experience across <strong>data analytics</strong>,
+            <strong>project support</strong>, and <strong>technical operations</strong>.  
+            During my time at <strong>UK Power Networks</strong> via <strong>La Fosse Academy</strong>, I supported the
+            <strong>EnergyWise</strong> initiative — helping the team track performance KPIs, organise reporting, and
+            maintain structured documentation to support project visibility.
+            <br><br>
+            My blend of technical and business experience enables me to communicate clearly between stakeholders,
+            transform data into insights, and contribute to effective delivery within analytical or project environments.
+            I enjoy combining structure, problem-solving, and creativity to bring clarity and momentum to projects.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow down" class="icon arrow_down" onclick="location.href='./#experience'">
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience">
+<img src="./assets/arrow_up.png" alt="Arrow up" class="icon arrow_top" onclick="location.href='./#about'">
+    <p class="section__text__p1">Where I've Worked</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="background-details-container">
+      <div class="about-containers">
+
+        <div class="details-container">
+          <h2 class="background-sub-title">UK Power Networks</h2>
+          <p><em>Junior Decision Scientist | March 2025 - August 2025</em></p>
+          <ul style="text-align:left; margin-top:1rem;">
+            <li>Supported the EnergyWise project by maintaining reporting data, tracking milestones, and updating KPI dashboards.</li>
+            <li>Worked with delivery and technical teams to ensure data accuracy and timely reporting for PMO updates.</li>
+            <li>Created and refined visual summaries in Power BI and Excel to communicate insights clearly to stakeholders.</li>
+          </ul>
+        </div>
+
+        <div class="details-container">
+          <h2 class="background-sub-title">La Fosse Academy</h2>
+          <p><em>Technology Trainee | Jan 2025 - March 2025</em></p>
+          <ul style="text-align:left; margin-top:1rem;">
+            <li>Completed training in Agile delivery, business analysis, and data-driven decision-making.</li>
+            <li>Delivered collaborative projects using Jira, Power BI, Databricks, and SQL workflows.</li>
+            <li>Produced clear documentation and reports to track progress, analyse outcomes, and support team communication.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow down" class="icon arrow_down" onclick="location.href='./#projects'">
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+<img src="./assets/arrow_up.png" alt="Arrow up" class="icon arrow_top" onclick="location.href='./#experience'">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="background-details-container">
+    <div class="about-containers">
+
+      <!-- ENERGYWISE -->
+      <div class="details-container color-container">
+        <h2 class="background-sub-title">EnergyWise</h2>
+        <p>
+          <strong>Final Project – La Fosse Academy</strong><br>
+          A sustainability and carbon-intensity dashboard designed to improve decision-making across UK Power Networks.
+          I worked on KPI definitions, dashboard layout, and stakeholder communication to align data visuals with strategic objectives.
+          <br><br>
+          <em>Tools:</em> Power BI · SQL · Databricks · Excel · Jira
+        </p>
+      </div>
+
+      <!-- SAFETY DASHBOARD -->
+      <div class="details-container color-container">
+        <h2 class="background-sub-title">UK Power Networks Safety Dashboard</h2>
+        <p>
+          Developed a Power BI dashboard to monitor safety performance metrics such as near misses and incident trends.
+          Helped integrate multiple Excel sources into a unified dataset, enabling accurate regional comparisons and automated report refreshes.
+          <br><br>
+          <em>Tools:</em> Power BI · Excel · Data Modelling · Stakeholder Reporting
+        </p>
+      </div>
+
+      <!-- PLOTLY DASH APP -->
+      <div class="details-container color-container">
+        <h2 class="background-sub-title">Plotly Dash WBS Automation App</h2>
+        <p>
+          Built a lightweight web app using Plotly Dash to automate generation of Work Breakdown Structure (WBS) codes from Excel input files.
+          Streamlined repetitive manual data entry into a quick, one-click automation — improving consistency and reducing human error.
+          <br><br>
+          <em>Tools:</em> Python · Plotly Dash · Pandas · Excel Integration
+        </p>
+      </div>
+
+      <!-- GEOQUEST -->
+      <div class="details-container color-container">
+        <h2 class="background-sub-title">GeoQuest</h2>
+        <p>
+          A fun geography web app for KS3 students featuring quiz-based learning and progress tracking.
+          Worked on data structure, content schema, and UI design to make the app engaging and easy to use.
+          <br><br>
+          <em>Tools:</em> Node.js · PostgreSQL · JavaScript · HTML/CSS
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow down" class="icon arrow_down" onclick="location.href='./#skills'">
+</section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+<img src="./assets/arrow_up.png" alt="Arrow up" class="icon arrow_top" onclick="location.href='./#projects'">
+    <p class="section__text__p1">My Toolkit</p>
+    <h1 class="title">Skills & Tools</h1>
+
+    <div class="background-details-container">
+      <div class="about-containers">
+
+        <div class="details-container">
+          <h3>Data & Analytics</h3>
+          <p>Python • SQL • Power BI • Databricks • Excel • Data Cleaning • Dashboard Reporting</p>
+        </div>
+
+        <div class="details-container">
+          <h3>Project Delivery & Business</h3>
+          <p>Jira • Documentation • Risk Logs • Stakeholder Communication • Process Tracking</p>
+        </div>
+
+        <div class="details-container">
+          <h3>Technical Foundations</h3>
+          <p>HTML • CSS • JavaScript • Version Control (Git) • Agile Practices</p>
+        </div>
+
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow down" class="icon arrow_down" onclick="location.href='./#contact'">
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <p class="section__text__p1">Ways to</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:naeemultimate@gmail.com">naeemultimate@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/syed-naeem-shah">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Back to top</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; <span id="year"></span> Naeem. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
